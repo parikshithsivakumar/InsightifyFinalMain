@@ -19,7 +19,7 @@ const Support = () => {
 
     const feedbackData = { name, issue, feedback };
 
-    fetch('http://localhost:5000/feedback/submit-feedback', {
+    fetch(`${process.env.REACT_APP_API_URL}/feedback/submit-feedback`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(feedbackData)
