@@ -17,7 +17,7 @@ const LegalUpload = () => {
   useEffect(() => {
     const fetchDocuments = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/api/document/all');
+        const response = await axios.get(`${process.env.REACT_APP_API_URL}/api/document/all`);
         setDocuments(response.data.documents || []);
       } catch (err) {
         console.error('Error fetching documents:', err);
@@ -45,7 +45,7 @@ const LegalUpload = () => {
 
     try {
       setLoading(true);
-      const response = await axios.post('http://localhost:5000/api/document/upload', formData, {
+      const response = await axios.post(`${process.env.REACT_APP_API_URL}/api/document/upload`, formData, {
         headers: { 'Content-Type': 'multipart/form-data' },
       });
 
@@ -53,7 +53,7 @@ const LegalUpload = () => {
       setCompliance(response.data.compliance_status || 'Unknown');
       setError('');
 
-      const response2 = await axios.get('http://localhost:5000/api/document/all');
+      const response2 = await axios.get(`${process.env.REACT_APP_API_URL}/api/document/all`);
       setDocuments(response2.data.documents || []);
     } catch (err) {
       console.error(err);
