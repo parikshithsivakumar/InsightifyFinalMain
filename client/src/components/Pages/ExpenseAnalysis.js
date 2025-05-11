@@ -35,7 +35,7 @@ const ExpenseForm = () => {
           alert('Authentication token missing.');
           return;
         }
-        const response = await axios.get('http://localhost:5000/expenses', {
+        const response = await axios.get(`${process.env.REACT_APP_API_URL}/expenses`, {
           headers: { Authorization: `Bearer ${token}` },
         });
         setExpenses(response.data);
