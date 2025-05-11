@@ -56,7 +56,7 @@ const ExpenseForm = () => {
         return;
       }
       const response = await axios.post(
-        'http://localhost:5000/expenses/add',
+        `${process.env.REACT_APP_API_URL}/add`,
         { name, amount, date, category },
         { headers: { Authorization: `Bearer ${token}` } }
       );
@@ -95,7 +95,7 @@ const ExpenseForm = () => {
         return;
       }
       const response = await axios.post(
-        'http://localhost:5000/expenses/upload',
+       `${process.env.REACT_APP_API_URL}/expenses/upload`,
         formData,
         { headers: { Authorization: `Bearer ${token}`, 'Content-Type': 'multipart/form-data' } }
       );
