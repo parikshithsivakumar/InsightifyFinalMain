@@ -21,7 +21,7 @@ const Dashboard = () => {
  useEffect(() => {
   const fetchExpenses = async () => {
     try {
-      const response = await axios.get('http://localhost:5000/expenses');
+      const response = await axios.get(`${process.env.REACT_APP_API_URL}/expenses`);
       const rawData = response.data;
 
       // Aggregate expenses by category
@@ -60,7 +60,7 @@ const [visibleSummaryIndex, setVisibleSummaryIndex] = useState(null);
  useEffect(() => {
     const fetchDocuments = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/api/document/all');
+        const response = await axios.get(`${process.env.REACT_APP_API_URL}/api/document/all`);
         setDocuments(response.data.documents || []);
       } catch (err) {
         console.error('Error fetching documents:', err);
