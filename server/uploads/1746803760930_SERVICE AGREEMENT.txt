@@ -1,0 +1,37 @@
+SERVICE AGREEMENT
+
+This Service Agreement ("Agreement") is entered into on this 1st day of January, 2024, by and between:
+
+AlphaTech Solutions Pvt. Ltd., a company incorporated under the Companies Act, 2013, having its registered office at 123 Business Park, Bangalore, Karnataka – 560001, India ("Service Provider"),
+
+AND
+
+Zenith Retailers Ltd., a company incorporated under the Companies Act, 2013, having its principal place of business at 456 Market Avenue, Mumbai, Maharashtra – 400001, India ("Client").
+
+1. SERVICES
+The Service Provider agrees to provide software development and maintenance services ("Services") to the Client as per the specifications mutually agreed upon.
+
+2. TERM
+This Agreement shall commence on January 1, 2024 and remain in effect for a period of 12 months unless terminated earlier as provided herein.
+
+3. OBLIGATIONS
+The Service Provider shall use commercially reasonable efforts to complete the Services within the timeline. The Client shall provide timely feedback and support during the development.
+
+4. TERMINATION
+Either party may terminate this Agreement with 30 days written notice. Upon termination, all deliverables completed shall be handed over and outstanding payments settled.
+
+5. CONFIDENTIALITY
+Both parties agree to maintain confidentiality of proprietary information exchanged during the term of this Agreement.
+
+6. DISPUTE RESOLUTION
+In the event of any dispute arising under this Agreement, both parties shall attempt to resolve it amicably. Failing which, the dispute shall be submitted to arbitration under the Arbitration and Conciliation Act, 1996.
+
+7. GOVERNING LAW
+This Agreement shall be governed by and construed in accordance with the laws of India.
+
+IN WITNESS WHEREOF, the parties have executed this Agreement as of the date first above written.
+
+Signed:
+
+_________________________              _________________________
+Authorized Signatory (Service Provider)    Authorized Signatory (Client)

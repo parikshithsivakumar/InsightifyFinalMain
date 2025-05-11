@@ -1,0 +1,174 @@
+.main-header {
+  background-color: white;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.search-input {
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.search-icon {
+  width: 20px;
+  height: 20px;
+  fill: #888;
+}
+
+.notification-btn {
+  background: none;
+  border: none;
+  position: relative;
+  margin-right: 20px;
+}
+
+.bell-icon {
+  width: 24px;
+  height: 24px;
+  fill: #444;
+}
+
+.notification-badge {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  padding: 2px 6px;
+  font-size: 10px;
+}
+
+.profile-container {
+  position: relative;
+  cursor: pointer;
+}
+
+.profile-circle {
+  background-color: #eee;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.profile-dropdown {
+  position: absolute;
+  top: 45px;
+  right: 0;
+  background-color: white;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  border-radius: 4px;
+  overflow: hidden;
+  z-index: 999;
+}
+
+.dropdown-item {
+  padding: 10px 16px;
+  cursor: pointer;
+}
+
+.dropdown-item:hover {
+  background-color: #f0f0f0;
+}
+
+
+
+/* Define animation keyframes for a smooth fade-in and scale effect */
+@keyframes fadeInScale {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Apply styles to the header title */
+.header-title h1 {
+  font-family: 'Roboto Slab', serif;  /* Elegant serif font */
+  font-size: 40px;                   /* Prominent font size */
+  font-weight: 700;                  /* Bold weight for emphasis */
+  color: #2c3e50;                   /* Deep dark color */
+  margin: 0;
+  letter-spacing: 1.5px;             /* Slightly spaced out letters */
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);  /* Soft shadow for depth */
+  animation: fadeInScale 1s ease-out; /* Apply the fade-in and scale animation */
+  transition: all 0.3s ease;        /* Smooth transition for hover effect */
+}
+
+/* Hover effect: change color and shadow */
+.header-title h1:hover {
+  color: #3498db;                   /* Blue color on hover */
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
+
+
+.home-link {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  margin-right: 20px; /* Space between Home link and Search bar */
+  color: #333;
+  cursor: pointer;
+}
+
+.home-link:hover {
+  color: #0073e6; /* Optional: Change color on hover */
+}
+
+.HomePage {
+  margin-left: 1311px;
+  padding-bottom: 5px; /* Add some space between search bar and Home link */
+}
+
+.home-link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  border-radius: 8px;
+  color: var(--cyan);
+  font-weight: 700;
+  font-size: 1.08rem;
+  background: none;
+  text-decoration: none;
+  transition: background 0.18s, color 0.18s;
+}
+
+.home-link:hover, .home-link:focus {
+  background: var(--blue-grey);
+  color: var(--white);
+}
+
+.home-icon {
+  width: 24px;
+  height: 24px;
+  fill: currentColor;
+  transition: fill 0.18s;
+}
+
+.home-label {
+  font-size: 1.08rem;
+  letter-spacing: 0.01em;
+}
